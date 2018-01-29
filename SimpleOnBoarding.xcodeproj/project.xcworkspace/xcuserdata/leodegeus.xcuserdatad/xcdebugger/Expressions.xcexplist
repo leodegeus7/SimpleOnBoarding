@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "LoadViewController.segueToWelcomeView(welcomeViewsInfo:):LoadViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OnBoard1ViewController.bottomButtonAction():OnBoard1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "onboarding">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OnBoard1ViewController.viewDidLoad():OnBoard1ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "layout[index].titleColor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SimpleOnBoarding.show():SimpleOnBoarding.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoadViewController.start():LoadViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoadViewController.startOffline():LoadViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoadViewController.startOnline():LoadViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "WelcomePageController.viewDidAppear(_:):WelcomePageController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "pages">
+            </PersistentString>
+            <PersistentString
+               value = "pages[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoadViewController.getWelcomeInfo(fileURL:):LoadViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in LoadViewController.startOffline():LoadViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.simpleOnBoarding.jsonURLOffline">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

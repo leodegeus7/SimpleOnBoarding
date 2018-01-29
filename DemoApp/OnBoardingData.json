@@ -1,0 +1,26 @@
+{
+    "views": [
+              {
+              "image": "sunset.jpg",
+              "logo": "logo.png",
+              "title": "Welcome!",
+              "text": "The best way to create OnBoarding Views in your app.",
+              "button": "Next"
+              },
+              {
+              "image": "trees.jpg",
+              "logo": "logo.png",
+              "title": "Welcome",
+              "text": "Simple OnBoarding is a pratical and easy-to-use framework.",
+              "button": "Next"
+              },
+              {
+              "image": "car.jpg",
+              "logo": "logo.png",
+              "title": "Super Customizable!",
+              "text": "A super customizable tool to personalize the views with the best style.",
+              "button": "Start"
+              }
+              ]
+}
+

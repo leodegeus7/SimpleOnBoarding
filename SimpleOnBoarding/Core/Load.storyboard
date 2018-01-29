@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YBs-CO-7Vi">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Load View Controller-->
+        <scene sceneID="cHH-IQ-gGC">
+            <objects>
+                <viewController storyboardIdentifier="LoadViewController" id="YBs-CO-7Vi" customClass="LoadViewController" customModule="SimpleOnBoarding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mV0-1M-ygR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mv9-Zo-kcf">
+                                <rect key="frame" x="0.0" y="-6" width="375" height="822"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JvO-77-cYI">
+                                <rect key="frame" x="0.0" y="774" width="375" height="4"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="Pl0-dE-DWl"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="egv-6Y-bfw" firstAttribute="bottom" secondItem="JvO-77-cYI" secondAttribute="bottom" id="DBj-up-kgQ"/>
+                            <constraint firstItem="JvO-77-cYI" firstAttribute="top" secondItem="Mv9-Zo-kcf" secondAttribute="bottom" id="Fha-yV-rY6"/>
+                            <constraint firstItem="egv-6Y-bfw" firstAttribute="trailing" secondItem="Mv9-Zo-kcf" secondAttribute="trailing" id="N5s-jN-RZs"/>
+                            <constraint firstItem="egv-6Y-bfw" firstAttribute="trailing" secondItem="JvO-77-cYI" secondAttribute="trailing" id="Niu-7D-OdL"/>
+                            <constraint firstItem="Mv9-Zo-kcf" firstAttribute="leading" secondItem="egv-6Y-bfw" secondAttribute="leading" id="b9p-do-RWJ"/>
+                            <constraint firstItem="Mv9-Zo-kcf" firstAttribute="top" secondItem="egv-6Y-bfw" secondAttribute="top" id="e7s-Qn-VSF">
+                                <variation key="heightClass=regular" constant="-50"/>
+                            </constraint>
+                            <constraint firstItem="JvO-77-cYI" firstAttribute="leading" secondItem="egv-6Y-bfw" secondAttribute="leading" id="k1n-NI-yRS"/>
+                            <constraint firstItem="egv-6Y-bfw" firstAttribute="bottom" secondItem="Mv9-Zo-kcf" secondAttribute="bottom" constant="4" id="u9z-ul-TKU">
+                                <variation key="heightClass=regular" constant="-38"/>
+                            </constraint>
+                            <constraint firstItem="Mv9-Zo-kcf" firstAttribute="top" secondItem="egv-6Y-bfw" secondAttribute="top" id="zJX-XG-nmh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="egv-6Y-bfw"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="u9z-ul-TKU"/>
+                                <exclude reference="e7s-Qn-VSF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="u9z-ul-TKU"/>
+                                <include reference="e7s-Qn-VSF"/>
+                                <exclude reference="zJX-XG-nmh"/>
+                                <exclude reference="Fha-yV-rY6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="loadingImage" destination="Mv9-Zo-kcf" id="ots-I7-go8"/>
+                        <outlet property="progressBarLoad" destination="JvO-77-cYI" id="sS1-KO-apz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CiT-4v-CSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250.40000000000001" y="165.06746626686657"/>
+        </scene>
+    </scenes>
+</document>

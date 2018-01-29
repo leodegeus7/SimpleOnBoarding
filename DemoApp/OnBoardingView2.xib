@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoard1ViewController" customModule="DemoApp" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomButton" destination="tU5-hm-mdc" id="QSb-5a-vO4"/>
+                <outlet property="descriptionLabel" destination="qSH-L3-8r9" id="NE6-bA-gNS"/>
+                <outlet property="logoImage" destination="iJm-Cd-l5q" id="7JM-Fh-kfP"/>
+                <outlet property="titleLabel" destination="Wic-xN-nwf" id="rTE-Bi-yqi"/>
+                <outlet property="topImage" destination="OVC-qx-mlS" id="eMt-g0-GT1"/>
+                <outlet property="view" destination="UZz-3i-pc6" id="EQ8-fz-ojU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="UZz-3i-pc6">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OVC-qx-mlS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="444"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <accessibility key="accessibilityConfiguration" identifier="mainImage"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU5-hm-mdc">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="CJb-bt-bdm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="Continue">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHI-4C-02w">
+                    <rect key="frame" x="0.0" y="444" width="375" height="173"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The simplest framework to create On Boarding Views in your app." lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="qSH-L3-8r9">
+                            <rect key="frame" x="24" y="82" width="331" height="41"/>
+                            <accessibility key="accessibilityConfiguration" hint="" identifier="7B48FD0B-0B9B-4ADB-8B2E-45F63C01991B" label=""/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="deviceRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Simplest Framework" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wic-xN-nwf">
+                            <rect key="frame" x="24" y="32" width="331" height="40"/>
+                            <accessibility key="accessibilityConfiguration" hint="" identifier="D9F1DB65-4B00-4237-A30A-4277136B3E27" label=""/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="sml-do-jDo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="29"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Wic-xN-nwf" firstAttribute="top" secondItem="RHI-4C-02w" secondAttribute="top" priority="800" constant="10" id="8Dk-Y5-Vok"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qSH-L3-8r9" secondAttribute="bottom" constant="20" id="I3s-EY-cGi"/>
+                        <constraint firstAttribute="trailing" secondItem="Wic-xN-nwf" secondAttribute="trailing" constant="20" id="Itn-L3-2P0"/>
+                        <constraint firstItem="Wic-xN-nwf" firstAttribute="centerY" secondItem="RHI-4C-02w" secondAttribute="centerY" priority="900" constant="-35" id="Jk9-VE-5Ab"/>
+                        <constraint firstItem="qSH-L3-8r9" firstAttribute="leading" secondItem="RHI-4C-02w" secondAttribute="leading" constant="24" id="bKv-WR-VSE"/>
+                        <constraint firstItem="Wic-xN-nwf" firstAttribute="leading" secondItem="RHI-4C-02w" secondAttribute="leading" constant="24" id="kEi-mu-Vm8"/>
+                        <constraint firstItem="qSH-L3-8r9" firstAttribute="top" secondItem="Wic-xN-nwf" secondAttribute="bottom" constant="10" id="zCA-dj-H0R"/>
+                        <constraint firstAttribute="trailing" secondItem="qSH-L3-8r9" secondAttribute="trailing" constant="20" id="zIj-y1-yyy"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iJm-Cd-l5q">
+                    <rect key="frame" x="20" y="354" width="209.5" height="70"/>
+                    <color key="tintColor" red="0.98532792540000003" green="1" blue="0.97453937970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="iJm-Cd-l5q" secondAttribute="height" multiplier="290:97" id="VlR-0J-pGT"/>
+                        <constraint firstAttribute="height" constant="70" id="zz0-LJ-Bk5"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OVC-qx-mlS" secondAttribute="trailing" id="2cm-V2-pZq"/>
+                <constraint firstItem="OVC-qx-mlS" firstAttribute="height" secondItem="UZz-3i-pc6" secondAttribute="height" multiplier="0.666" id="7zl-ST-mDw"/>
+                <constraint firstItem="RHI-4C-02w" firstAttribute="leading" secondItem="UZz-3i-pc6" secondAttribute="leading" id="DLi-c9-ieR"/>
+                <constraint firstItem="iJm-Cd-l5q" firstAttribute="bottom" secondItem="OVC-qx-mlS" secondAttribute="bottom" constant="-20" id="KiL-xP-i9w"/>
+                <constraint firstItem="iJm-Cd-l5q" firstAttribute="leading" secondItem="OVC-qx-mlS" secondAttribute="leading" constant="20" id="Kyo-Q2-7DT"/>
+                <constraint firstItem="tU5-hm-mdc" firstAttribute="leading" secondItem="UZz-3i-pc6" secondAttribute="leading" id="OSr-Pr-OiB"/>
+                <constraint firstAttribute="bottom" secondItem="tU5-hm-mdc" secondAttribute="bottom" id="SG4-24-c7E"/>
+                <constraint firstItem="OVC-qx-mlS" firstAttribute="top" secondItem="UZz-3i-pc6" secondAttribute="top" id="Tih-a5-qeo"/>
+                <constraint firstAttribute="trailing" secondItem="tU5-hm-mdc" secondAttribute="trailing" id="XNe-dt-oN8"/>
+                <constraint firstItem="tU5-hm-mdc" firstAttribute="top" secondItem="RHI-4C-02w" secondAttribute="bottom" id="coK-9t-BgB"/>
+                <constraint firstItem="OVC-qx-mlS" firstAttribute="leading" secondItem="UZz-3i-pc6" secondAttribute="leading" id="gsz-NV-9gz"/>
+                <constraint firstItem="RHI-4C-02w" firstAttribute="top" secondItem="OVC-qx-mlS" secondAttribute="bottom" id="rPW-7K-ggn"/>
+                <constraint firstAttribute="trailing" secondItem="RHI-4C-02w" secondAttribute="trailing" id="v0s-XI-dos"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="pNS-a4-kJx"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityLabel" value="OnBoardingFirst"/>
+            </userDefinedRuntimeAttributes>
+        </view>
+    </objects>
+</document>
