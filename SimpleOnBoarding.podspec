@@ -91,7 +91,7 @@ s.source       = { :git => "https://github.com/leodegeus7/SimpleOnBoarding.git",
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "SimpleOnBoarding", "SimpleOnBoarding/**/*.{h,m,swift,xib}"
+s.source_files  = "SimpleOnBoarding", "SimpleOnBoarding/**/*.{h,m,swift,xib,storyboard}"
 s.exclude_files = "Classes/Exclude"
 
 # s.public_header_files = "Classes/**/*.h"
