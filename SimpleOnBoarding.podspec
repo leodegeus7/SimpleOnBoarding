@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "SimpleOnBoarding"
-s.version      = "0.0.2"
+s.version      = "0.0.21"
 s.summary      = "This is a easy-to-use framework to create OnBoarding Views"
 
 # This description is used to generate tags and improve search results.
@@ -91,8 +91,12 @@ s.source       = { :git => "https://github.com/leodegeus7/SimpleOnBoarding.git",
 #  Not including the public_header_files will make all headers public.
 #
 
-s.source_files  = "SimpleOnBoarding", "SimpleOnBoarding/**/*.{h,m,swift,xib,storyboard}"
+s.source_files  = "SimpleOnBoarding", "SimpleOnBoarding/**/*.{h,m,swift,xib}"
 s.exclude_files = "Classes/Exclude"
+
+s.resource_bundles = {
+     'SimpleOnBoarding' => ["SimpleOnBoarding/**/*.{storyboard}"]
+  }
 
 # s.public_header_files = "Classes/**/*.h"
 
