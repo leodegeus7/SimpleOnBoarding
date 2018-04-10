@@ -95,7 +95,7 @@ s.source_files  = "SimpleOnBoarding", "SimpleOnBoarding/**/*.{h,m,swift,xib}"
 s.exclude_files = "Classes/Exclude"
 
 
-s.resources = ['SimpleOnBoarding/**/*.{storyboard}']
+s.resources = ['SimpleOnBoarding/**/*.{storyboard,jpg,png}']
 
 
 # s.public_header_files = "Classes/**/*.h"
