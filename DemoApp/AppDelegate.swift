@@ -15,8 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        UIApplication.shared.statusBarStyle = .lightContent
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let storyboard = UIStoryboard(name: "Test", bundle: nil)
         let nextController = storyboard.instantiateViewController(withIdentifier: "TestViewController") as! TestViewController
