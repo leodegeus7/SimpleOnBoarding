@@ -82,6 +82,9 @@ onBoarding.show()
 
 * 0.0.1
     * First Commit
+    
+* 0.0.24
+    * Updated to Swift 4.2
 
 ## Meta
 
