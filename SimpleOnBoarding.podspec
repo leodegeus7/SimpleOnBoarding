@@ -11,7 +11,7 @@ DESC
 s.homepage     = "https://github.com/leodegeus7/SimpleOnBoarding"
 s.license      = { :type => "MIT", :file => "LICENSE" }
 s.author             = { "Leonardo Geus" => "leoardodegeus@gmail.com" }
-s.platform     = :ios, "12.0"
+s.platform     = :ios, "10.0"
 s.source       = { :git => "https://github.com/leodegeus7/SimpleOnBoarding.git", :tag => "#{s.version}" }
 s.source_files  = "SimpleOnBoarding", "SimpleOnBoarding/**/*.{h,m,swift,xib}"
 s.exclude_files = "Classes/Exclude"
