@@ -82,7 +82,9 @@ onBoarding.show()
 
 * 0.0.1
     * First Commit
-
+* 0.0.25
+    * Fixed problems of communcation between controllers
+    
 ## Meta
 
 Leonardo Alexandre de Geus – [@leodegeus7](https://www.linkedin.com/in/leodegeus7/) – leonardodegeus@gmail.com

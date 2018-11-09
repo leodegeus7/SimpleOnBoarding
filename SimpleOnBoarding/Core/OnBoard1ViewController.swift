@@ -73,7 +73,14 @@ internal class OnBoard1ViewController: UIViewController {
     
     @objc func bottomButtonAction() {
         if onboarding.isLast {
-            self.present(simpleOnBoarding.nextViewController, animated: false, completion: nil)
+            if let app = UIApplication.shared.delegate, let window = app.window {
+                DispatchQueue.main.asyncAfter(deadline: .now()) {
+                    window?.rootViewController?.dismiss(animated: true, completion: nil)
+                    window?.rootViewController = self.simpleOnBoarding.nextViewController
+                    window?.makeKeyAndVisible()
+                    
+                }
+            }
         } else {
             let parent = self.parent as! WelcomePageController
             let currentIndex = parent.pages.index(of: self)

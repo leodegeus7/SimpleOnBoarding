@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SimpleOnBoarding"
-s.version      = "0.0.24"
+s.version      = "0.0.25"
 s.summary      = "This is a easy-to-use framework to create OnBoarding Views"
 
 s.description  = <<-DESC
